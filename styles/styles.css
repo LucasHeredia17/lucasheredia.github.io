@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Teko:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #070708, #041031);
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem 0rem 0rem;
+  margin: 0;
+}
+
+.titulotexto {
+  font-size: 50px;
+  color: #fff;
+  padding: 20px;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-links {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1d4ed8;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 80%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+/* .blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+} */
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+header .content h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+header .content h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+  color: #ccc;
+}
+
+header .imagen {
+  position: relative;
+}
+
+header .imagen img {
+  max-width: 600px;
+  margin: auto;
+  border-radius: 1000px;
+}
+
+.features .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Mis tecnologias */
+
+.tituloprincipal1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0rem 1rem;
+  margin: 0;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+
+.container1 {
+  max-width: 1700px;
+  margin: auto;
+  padding: 4rem 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  gap: 3rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #c3c3c3;
+  padding: 5rem;
+  border: 1px solid #c3c3c3;
+  border-radius: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+  max-width: 22rem;
+  height: auto;
+  display: block;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+section div .textgalery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 20rem;
+}
+
+/* Mis Actividades Favoritas */
+
+.tituloprincipal2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0rem 2rem;
+  margin: 0;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+
+.actividades {
+  max-width: 1200px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+.actividades,
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea,
+.btnSubmit {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.actividades label {
+  color: #ffffff;
+}
+
+.btnSubmit {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #ccc;
+  background-color: #1d4ed8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnSubmit:hover {
+  background-color: #1e40af;
+}
+
+.actividades .actContainer span {
+  color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem 2rem 1rem;
+  margin: 0;
+}
+
+/* Actividades */
+
+#activitiesContainer {
+  padding: 2rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: row;
+}
+
+.actContainer {
+  position: relative;
+  overflow: hidden;
+  background-color: #c3c3c3;
+  padding: 1rem;
+  border: 1px solid #c3c3c3;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagenActivity {
+  max-width: 22rem;
+  height: auto;
+  display: block;
+}
+
+.actContainer:hover {
+  transform: scale(1.1);
+}
+
+.textDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.actContainer:hover .textDiv {
+  opacity: 1;
+}
+
+.titleActivity {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.descriptionActivity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 20rem;
+}
+
+#noHayAct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem 0rem;
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+
+/* Footer */
+
+footer {
+  color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem 2rem 1rem;
+  margin: 0;
+}

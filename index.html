@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Lucas</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <header class="titulo">
+      <h1 class="titulotexto">Portafolio de Lucas</h1>
+    </header>
+
+    <nav>
+      <ul class="nav-links">
+        <li class="link"><a href="#">Sobre Mí</a></li>
+        <li id="link1" class="link">
+          <a href="#">Mis Tecnologías Favoritas</a>
+        </li>
+        <li id="link2" class="link">
+          <a href="#">Mis Actividades Favoritas</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="container">
+      <div class="content">
+        <h1>Hola, mi nombre es <span>Lucas Heredia</span>, Web Developer</h1>
+        <p>
+          Hola soy Lucas Heredia, tengo 21 años y me gustaría crecer como
+          programador Full Stack en SoyHenry. Tengo ganas de absorber
+          conocimiento con respecto a la programación y diferentes lenguajes de
+          programación, soy alguien que constantemente busca aprender. Soy
+          alguien que siempre sigue y acata ordenes pero cuando hay un equipo
+          donde no tiene un líder normalmente yo busco serlo. Sé manejar
+          programas de edición de imágenes y videos, tales como Photoshop,
+          Illustrator y Sony Vegas. Ahora mi objetivo es integrarme a la
+          programación porque me gusta y siempre quise aprender a manejar.
+        </p>
+      </div>
+      <div class="imagen">
+        <img src="./image/fotos (132)2.jpg" alt="Foto de Presentación" />
+      </div>
+    </header>
+
+    <h2 class="tituloprincipal1">Mis Tecnologías Favoritas</h2>
+
+    <section class="container1">
+      <div class="gallery-item">
+        <img src="./image/logo-html5.png" alt="Imagen HTML" />
+        <div class="overlay">
+          <div class="title">HTML</div>
+          <div class="textgalery">
+            Gracias a HTML le doy una base a cada uno de mis proyectos.
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="./image/logo-css.png" alt="Imagen CSS" />
+        <div class="overlay">
+          <div class="title">CSS</div>
+          <div class="textgalery">
+            Gracias a CSS le doy una forma interactiva y muy facil de entender
+            al usuario dentro del proyecto.
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="./image/logo-js.png" alt="Imagen JS" />
+        <div class="overlay">
+          <div class="title">JS</div>
+          <div class="textgalery">
+            Gracias a JavaScript los usuarios son ayudados de formas mas
+            faciles.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="tituloprincipal2">Mis Actividades Favoritas</h2>
+
+    <section class="actividades">
+      <div id="activityForm">
+        <label for="text"> Titulo: </label>
+        <input type="text" id="text" placeholder="Tu Titulo" name="text" />
+
+        <label for="description"> Descripción: </label>
+        <textarea
+          name="description"
+          id="description"
+          rows="2"
+          placeholder="Pon aquí tu descripción"
+        ></textarea>
+
+        <label for="imgUrl"> URL de la imagen: </label>
+        <input
+          type="imgUrl"
+          id="imgUrl"
+          placeholder="www.google.com"
+          name="imgUrl"
+        />
+
+        <button
+          id="btnSubmit"
+          class="btnSubmit"
+          name="btnSubmit"
+          onclick="handlerButton()"
+        >
+          Subir
+        </button>
+      </div>
+      <div id="activitiesContainer">
+        <span id="noHayAct">No hay actividades</span>
+      </div>
+    </section>
+
+    <footer>
+      <span>
+        Hecho por <strong>Lucas</strong>
+        Todos los derechos reservados &copy; 2024
+      </span>
+    </footer>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
